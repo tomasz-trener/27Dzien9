@@ -12,11 +12,19 @@ namespace P04AplikacjaZawodnicy
 {
     public partial class TabelaZawodnikowGlowny : System.Web.UI.Page
     {
+        public int? IdPodswietlanego { get; set; }
         public Zawodnik[] Zawodnicy { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             IManagerZawodnikow mz = new ManagerZawodnikowLINQ();
             Zawodnicy = mz.WczytajZawodnikow();
+
+            //podswietlenie zawodnika
+            string idPodswietlonegoStr = Request["podswietlonyId"];
+            if (!string.IsNullOrEmpty(idPodswietlonegoStr))
+            {
+                IdPodswietlanego = Convert.ToInt32(idPodswietlonegoStr);
+            }
         }
     }
 }

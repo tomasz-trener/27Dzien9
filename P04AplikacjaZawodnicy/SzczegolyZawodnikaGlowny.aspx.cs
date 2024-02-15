@@ -67,7 +67,7 @@ namespace P04AplikacjaZawodnicy
             }
           
 
-            Response.Redirect("TabelaZawodnikowGlowny.aspx");
+            Response.Redirect($"TabelaZawodnikowGlowny.aspx?podswietlonyId={zawodnik.Id_zawodnika}");
         }
 
         protected void btnUsun_Click(object sender, EventArgs e)

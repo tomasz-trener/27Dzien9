@@ -6,7 +6,9 @@ wchodzimy w ustawienia chrome :
 	chrome://flags/#allow-insecure-localhost i zmieniamy opocje na enabled 
 
 2) Poznaliœmy ró¿nice w kontrolkach asp i html 
-3) poznaliœmy wstawki w asp <% %>  (bez szablonu)
+	- stworzenie kalkulator.aspx
+3) poznaliœmy wstawki w asp <% %>  (bez szablonu) 
+	- wyœwietlenie zaowdników w tabeli 
 4) Stworzenie projektu P04AplikacjaZawodnicy (z szablonem)
 	- wyœwietliliœmy zawodników z bazy jako strona niezale¿na (bez mastera) ale tym razem z szablonem HTML 
 	- dodaliœmy master page i stworzyliœmy TabelaZawodnikowGlowny.aspx, która bazuje na masterpage 
