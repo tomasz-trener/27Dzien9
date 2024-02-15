@@ -1,0 +1,6 @@
+1) konfiguracja zaufanego servera localhost po https: 
+
+W przypadku b³êdu niepoprawnego certyfikatu wystawionego przez serwer 
+wchodzimy w ustawienia chrome : 
+
+	chrome://flags/#allow-insecure-localhost i zmieniamy opocje na enabled 
