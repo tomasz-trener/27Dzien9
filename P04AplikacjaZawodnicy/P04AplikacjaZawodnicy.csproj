@@ -89,6 +89,7 @@
     <Content Include="assets\js\plugins\chartjs.min.js" />
     <Content Include="assets\js\plugins\perfect-scrollbar.jquery.min.js" />
     <Content Include="Default.aspx" />
+    <Content Include="SzczegolyZawodnikaGlowny.aspx" />
     <Content Include="TabelaDashboardBezMaster.aspx" />
     <Content Include="TabelaZawodnikowGlowny.aspx" />
     <Content Include="Web.config" />
@@ -109,6 +110,13 @@
       <DependentUpon>Glowny.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SzczegolyZawodnikaGlowny.aspx.cs">
+      <DependentUpon>SzczegolyZawodnikaGlowny.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SzczegolyZawodnikaGlowny.aspx.designer.cs">
+      <DependentUpon>SzczegolyZawodnikaGlowny.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TabelaDashboardBezMaster.aspx.cs">
       <DependentUpon>TabelaDashboardBezMaster.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

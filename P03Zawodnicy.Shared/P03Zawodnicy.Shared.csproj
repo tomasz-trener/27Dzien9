@@ -65,12 +65,6 @@
     <Compile Include="Domain\Zawodnik.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\P05PolaczenieZBaza\P05PolaczenieZBaza.csproj">
-      <Project>{79a58e5d-09c7-4189-9df6-7a3b8cab0196}</Project>
-      <Name>P05PolaczenieZBaza</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Data\ModelBazy.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>ModelBazy.designer.cs</LastGenOutput>
@@ -86,6 +80,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\P05PolaczenieZBaza\P05PolaczenieZBaza.csproj">
+      <Project>{79a58e5d-09c7-4189-9df6-7a3b8cab0196}</Project>
+      <Name>P05PolaczenieZBaza</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

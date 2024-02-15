@@ -183,5 +183,11 @@ namespace P04Zawodnicy.Shared.Services
                     SredniWzrost = x.Average(y=>y.wzrost).Value
                 }).ToArray();
         }
+
+        public Zawodnik PodajZawodnika(int id)
+        {
+            var z = new ModelBazyDataContext(connString).ZawodnikDb.FirstOrDefault(x => x.id_zawodnika == id);
+            return mapujZawodnikow(z).FirstOrDefault();
+        }
     }
 }

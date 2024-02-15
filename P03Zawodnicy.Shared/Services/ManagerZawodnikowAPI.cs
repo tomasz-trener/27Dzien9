@@ -48,6 +48,11 @@ namespace P03Zawodnicy.Shared.Services
             throw new NotImplementedException();
         }
 
+        public Zawodnik PodajZawodnika(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public Zawodnik[] PodajZawodnikow(string kraj)
         {
             throw new NotImplementedException();

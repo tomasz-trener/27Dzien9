@@ -33,6 +33,8 @@ namespace P03Zawodnicy.Shared.Services
         List<Osoba> WyszukajOsoby(string fragmentNazwy);
 
         GrupaKraju[] PodajSredniWzrostDlaKazdegoKraju();
+
+        Zawodnik PodajZawodnika(int id);
          
     }
 }

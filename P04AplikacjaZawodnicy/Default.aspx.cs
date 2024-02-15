@@ -15,6 +15,9 @@ namespace P04AplikacjaZawodnicy
         public Zawodnik[] Zawodnicy { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            Response.Redirect("TabelaZawodnikowGlowny.aspx");
+
+
             IManagerZawodnikow mz = new ManagerZawodnikowLINQ();
             Zawodnicy = mz.WczytajZawodnikow();
         }
