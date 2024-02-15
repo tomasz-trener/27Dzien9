@@ -90,6 +90,7 @@
     <Content Include="assets\js\plugins\perfect-scrollbar.jquery.min.js" />
     <Content Include="Default.aspx" />
     <Content Include="TabelaDashboardBezMaster.aspx" />
+    <Content Include="TabelaZawodnikowGlowny.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -114,6 +115,13 @@
     </Compile>
     <Compile Include="TabelaDashboardBezMaster.aspx.designer.cs">
       <DependentUpon>TabelaDashboardBezMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TabelaZawodnikowGlowny.aspx.cs">
+      <DependentUpon>TabelaZawodnikowGlowny.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TabelaZawodnikowGlowny.aspx.designer.cs">
+      <DependentUpon>TabelaZawodnikowGlowny.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
