@@ -12,11 +12,17 @@ namespace P04AplikacjaZawodnicy
 {
     public partial class SzczegolyZawodnikaGlowny : System.Web.UI.Page
     {
+        enum TrybOperacji
+        {
+            Tworzenie,
+            Edycja
+        }
+
+        private TrybOperacji trybOperacji => string.IsNullOrEmpty(Request["id"]) ? TrybOperacji.Tworzenie : TrybOperacji.Edycja;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             string idStr = Request["id"];
-
-           
 
             if (!string.IsNullOrEmpty(idStr) && !Page.IsPostBack)
             {
@@ -46,10 +52,18 @@ namespace P04AplikacjaZawodnicy
             zawodnik.Waga = Convert.ToInt32(txtWaga.Text);
             zawodnik.Wzrost = Convert.ToInt32(txtWzrost.Text);
 
-            zawodnik.Id_zawodnika = Convert.ToInt32(txtId.Text);
+           
 
             IManagerZawodnikow mz = new ManagerZawodnikowLINQ();
-            mz.Edytuj(zawodnik);
+
+            if (trybOperacji == TrybOperacji.Tworzenie)
+                mz.Dodaj(zawodnik);
+            else if(trybOperacji== TrybOperacji.Edycja)
+            {
+                zawodnik.Id_zawodnika = Convert.ToInt32(txtId.Text);
+                mz.Edytuj(zawodnik);
+            }
+          
 
             Response.Redirect("TabelaZawodnikowGlowny.aspx");
         }

@@ -9,8 +9,14 @@
     <div class="col-md-12">
       <div class="card">
         <div class="card-header">
-          <h4 class="card-title"> Simple Table</h4>
+          <h4 class="card-title"> Zawodnicy</h4>
         </div>
+
+          <div style="margin-left:15px">
+              <a href="SzczegolyZawodnikaGlowny.aspx">Stworz nowy rekord</a>
+          </div>
+
+
         <div class="card-body">
           <div class="table-responsive">
             <table class="table">
