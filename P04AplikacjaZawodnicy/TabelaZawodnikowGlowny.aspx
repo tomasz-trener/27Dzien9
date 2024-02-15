@@ -36,6 +36,7 @@
                   <th>
                   Waga
                   </th>
+                  <th>Akcje</th>
               </thead>
               <tbody>
                
@@ -49,6 +50,7 @@
                               <td><%= z.DataUrodzenia?.ToString("dd-MM-yyyy") %></td>
                               <td><%= z.Wzrost %></td>
                               <td><%= z.Waga %></td>
+                              <td><a class="btn btn-danger" href="TabelaZawodnikowGlowny.aspx?idUsuwanego=<%= z.Id_zawodnika %>">X</a></td>
                           </tr>
 
                    <%   }

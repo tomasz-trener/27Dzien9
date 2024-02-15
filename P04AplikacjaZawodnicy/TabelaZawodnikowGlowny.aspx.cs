@@ -17,6 +17,15 @@ namespace P04AplikacjaZawodnicy
         protected void Page_Load(object sender, EventArgs e)
         {
             IManagerZawodnikow mz = new ManagerZawodnikowLINQ();
+
+            // usuwanie 
+            string idUsuwanegoStr = Request["idUsuwanego"];
+            if (!string.IsNullOrEmpty(idUsuwanegoStr))
+            {
+                int idUsuwanego = Convert.ToInt32(idUsuwanegoStr);
+                mz.Usun(idUsuwanego);
+            }
+
             Zawodnicy = mz.WczytajZawodnikow();
 
             //podswietlenie zawodnika
@@ -25,6 +34,8 @@ namespace P04AplikacjaZawodnicy
             {
                 IdPodswietlanego = Convert.ToInt32(idPodswietlonegoStr);
             }
+
+           
         }
     }
 }
