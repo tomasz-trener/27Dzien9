@@ -40,6 +40,8 @@ namespace P04AplikacjaZawodnicy
                 txtDataUr.Text = zawodnik.DataUrodzenia?.ToString("dd-MM-yyyy");
 
             }
+
+            btnUsun.Visible = trybOperacji == TrybOperacji.Edycja;
         }
 
         protected void btnZapisz_Click(object sender, EventArgs e)

@@ -4,3 +4,15 @@ W przypadku b³êdu niepoprawnego certyfikatu wystawionego przez serwer
 wchodzimy w ustawienia chrome : 
 
 	chrome://flags/#allow-insecure-localhost i zmieniamy opocje na enabled 
+
+2) Poznaliœmy ró¿nice w kontrolkach asp i html 
+3) poznaliœmy wstawki w asp <% %>  (bez szablonu)
+4) Stworzenie projektu P04AplikacjaZawodnicy (z szablonem)
+	- wyœwietliliœmy zawodników z bazy jako strona niezale¿na (bez mastera) ale tym razem z szablonem HTML 
+	- dodaliœmy master page i stworzyliœmy TabelaZawodnikowGlowny.aspx, która bazuje na masterpage 
+5) Dodaliœmy operacje CRUD na zawodnikach 
+	- szczegó³y zawodnika
+	- edycja (pamiêtaæ o postback)
+	- usuwanie
+	- tworzenie nowego 
+6) Zadanie: po zapisanu zmian w zawodniku, zawodnik, który zosta³ zapisany powinien byæ podœwietlony 
