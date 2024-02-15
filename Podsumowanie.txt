@@ -25,3 +25,9 @@ wchodzimy w ustawienia chrome :
 	- gdy dodamy kolejnego zawodnika to wszyscy ostatnio dodani zawodnicy bed¹ podswietleni 
 	- informacje o nowododanych zawodnika tym razem bedziemy przechowywaæ w sesji 
 	- Z sesji korzystamy tak samo jak request czyli ustawienie sesji to Session["klucz"] = "X" oraz pobranie z sesji to var x = Session["klucz"]; 
+
+uwaga!:
+	- <sessionState mode="InProc" timeout="5"></sessionState> - ustawienie czasu sesji 
+	- zmieniæ w managerzeZawodnikow aby ustawia³ ID nowo dodanego zawodnika 
+
+9) Dodaj opcje wyœwietalnia z mo¿liwoœci¹ podaminy trenera dla zawodnika 

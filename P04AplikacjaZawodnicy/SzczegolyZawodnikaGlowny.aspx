@@ -59,6 +59,18 @@
                     </div>
                  
                   </div>
+
+                     <div class="row">
+                       <div class="col-md-6 pr-1">
+                         <div class="form-group">
+                           <label>Trener</label>
+                             <asp:DropDownList ID="ddlTrener" CssClass="form-control"  runat="server"></asp:DropDownList>
+                         </div>
+                       </div>
+                      
+
+                     </div>
+
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">

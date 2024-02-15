@@ -39,9 +39,22 @@ namespace P04AplikacjaZawodnicy
                 txtWzrost.Text = Convert.ToString(zawodnik.Wzrost);
                 txtDataUr.Text = zawodnik.DataUrodzenia?.ToString("dd-MM-yyyy");
 
+                WczytajTrenerow();
+                ddlTrener.SelectedValue = zawodnik.Id_trenera.ToString();
             }
 
             btnUsun.Visible = trybOperacji == TrybOperacji.Edycja;
+        }
+
+        private void WczytajTrenerow()
+        {
+            IManagerZawodnikow mz = new ManagerZawodnikowLINQ();
+            var trenerzy = mz.PodajTrenerow();
+            ddlTrener.DataSource = trenerzy;
+            ddlTrener.DataTextField = "Nazwisko";
+            ddlTrener.DataValueField = "Id";
+            ddlTrener.DataBind();
+
         }
 
         protected void btnZapisz_Click(object sender, EventArgs e)
@@ -53,7 +66,7 @@ namespace P04AplikacjaZawodnicy
             zawodnik.DataUrodzenia = Convert.ToDateTime(txtDataUr.Text);
             zawodnik.Waga = Convert.ToInt32(txtWaga.Text);
             zawodnik.Wzrost = Convert.ToInt32(txtWzrost.Text);
-
+            zawodnik.Id_trenera = Convert.ToInt32(ddlTrener.SelectedValue);
            
 
             IManagerZawodnikow mz = new ManagerZawodnikowLINQ();
