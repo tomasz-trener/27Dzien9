@@ -13,6 +13,7 @@ namespace P04AplikacjaZawodnicy
     public partial class TabelaZawodnikowGlowny : System.Web.UI.Page
     {
         public int? IdPodswietlanego { get; set; }
+        public List<int> NowoDodaniZawodnicy { get; set; }
         public Zawodnik[] Zawodnicy { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -28,14 +29,16 @@ namespace P04AplikacjaZawodnicy
 
             Zawodnicy = mz.WczytajZawodnikow();
 
-            //podswietlenie zawodnika
+            //podswietlenie edytowanego zawodnika
             string idPodswietlonegoStr = Request["podswietlonyId"];
             if (!string.IsNullOrEmpty(idPodswietlonegoStr))
             {
                 IdPodswietlanego = Convert.ToInt32(idPodswietlonegoStr);
             }
 
-           
+            //podswietlenie nowo dodanych
+            if (Session["nowoDodaniZawodnicy"] != null)
+                NowoDodaniZawodnicy = Session["nowoDodaniZawodnicy"] as List<int>;
         }
     }
 }

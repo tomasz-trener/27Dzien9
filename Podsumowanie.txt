@@ -20,3 +20,8 @@ wchodzimy w ustawienia chrome :
 6) Zadanie: po zapisanu zmian w zawodniku, zawodnik, który zosta³ zapisany powinien byæ podœwietlony 
 7) Zadanie: dodaj opcje usuwania zawodników - bezpoœrednio z formularza listy zawodników. 
 	- dodaj now¹ kolumnê o nazwie Akcje z odnoœnikiem "Usuñ", po klkniêciu którego nast¹pi usuniêcie danego zawodnika 
+
+8) Zadanie: Po dodaniu nowego zawodnika, ten zawodnik powinien podswietlaæ siê na zielono
+	- gdy dodamy kolejnego zawodnika to wszyscy ostatnio dodani zawodnicy bed¹ podswietleni 
+	- informacje o nowododanych zawodnika tym razem bedziemy przechowywaæ w sesji 
+	- Z sesji korzystamy tak samo jak request czyli ustawienie sesji to Session["klucz"] = "X" oraz pobranie z sesji to var x = Session["klucz"]; 

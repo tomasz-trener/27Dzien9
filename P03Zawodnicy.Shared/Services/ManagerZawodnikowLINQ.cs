@@ -28,7 +28,7 @@ namespace P04Zawodnicy.Shared.Services
             ModelBazyDataContext db = new ModelBazyDataContext(connString);
             db.ZawodnikDb.InsertOnSubmit(zd);
             db.SubmitChanges();
-
+            z.Id_zawodnika = zd.id_zawodnika;
         }
 
         public void Edytuj(Zawodnik edytowany)

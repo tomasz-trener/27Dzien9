@@ -59,8 +59,17 @@ namespace P04AplikacjaZawodnicy
             IManagerZawodnikow mz = new ManagerZawodnikowLINQ();
 
             if (trybOperacji == TrybOperacji.Tworzenie)
+            { 
                 mz.Dodaj(zawodnik);
-            else if(trybOperacji== TrybOperacji.Edycja)
+                List<int> nowoDodaniZawodnicy = (List<int>)Session["nowoDodaniZawodnicy"];
+                if (nowoDodaniZawodnicy == null)
+                    nowoDodaniZawodnicy = new List<int>();
+
+                nowoDodaniZawodnicy.Add(zawodnik.Id_zawodnika);
+                Session["nowoDodaniZawodnicy"] = nowoDodaniZawodnicy;
+
+            }
+            else if (trybOperacji == TrybOperacji.Edycja)
             {
                 zawodnik.Id_zawodnika = Convert.ToInt32(txtId.Text);
                 mz.Edytuj(zawodnik);
