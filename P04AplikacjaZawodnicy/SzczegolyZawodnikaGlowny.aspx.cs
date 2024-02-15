@@ -53,5 +53,13 @@ namespace P04AplikacjaZawodnicy
 
             Response.Redirect("TabelaZawodnikowGlowny.aspx");
         }
+
+        protected void btnUsun_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(txtId.Text);
+            IManagerZawodnikow mz = new ManagerZawodnikowLINQ();
+            mz.Usun(id);
+            Response.Redirect("TabelaZawodnikowGlowny.aspx");
+        }
     }
 }
