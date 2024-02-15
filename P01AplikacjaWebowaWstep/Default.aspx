@@ -9,8 +9,15 @@
 <body>
     <form id="form1" runat="server">
       
+        <p>Kontrolki ASP</p>
+
         <asp:Button ID="Button1" runat="server" Text="Button" />
         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+
+        <p>Kontrolki HTML</p>
+
+        <input type="submit" value="Przycisk HTML" />
+        <input type="text" value="Textbox HTML" />
 
     </form>
 </body>
