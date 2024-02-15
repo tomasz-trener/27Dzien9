@@ -1,0 +1,3 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Glowny.master.cs" Inherits="P04AplikacjaZawodnicy.Glowny" %>
+
+ 
