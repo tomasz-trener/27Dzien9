@@ -67,6 +67,11 @@
                       </div>
                     </div>
                   </div>
+
+
+                    <asp:Button ID="btnZapisz" CssClass="btn btn-primary" OnClick="btnZapisz_Click" runat="server" Text="Zapisz" />
+
+
                 </form>
               </div>
             </div>
