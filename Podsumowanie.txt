@@ -30,4 +30,4 @@ uwaga!:
 	- <sessionState mode="InProc" timeout="5"></sessionState> - ustawienie czasu sesji 
 	- zmieniæ w managerzeZawodnikow aby ustawia³ ID nowo dodanego zawodnika 
 
-9) Dodaj opcje wyœwietalnia z mo¿liwoœci¹ podaminy trenera dla zawodnika 
+9) Dodaj opcje wyœwietalnia trenera z mo¿liwoœci¹ podmiany trenera dla zawodnika 
