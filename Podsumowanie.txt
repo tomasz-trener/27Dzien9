@@ -18,3 +18,5 @@ wchodzimy w ustawienia chrome :
 	- usuwanie
 	- tworzenie nowego 
 6) Zadanie: po zapisanu zmian w zawodniku, zawodnik, który zosta³ zapisany powinien byæ podœwietlony 
+7) Zadanie: dodaj opcje usuwania zawodników - bezpoœrednio z formularza listy zawodników. 
+	- dodaj now¹ kolumnê o nazwie Akcje z odnoœnikiem "Usuñ", po klkniêciu którego nast¹pi usuniêcie danego zawodnika 
